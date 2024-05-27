@@ -87,13 +87,13 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public double calculateBonus(Employee employee) {
         if (employee instanceof Manager){
-            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(MANAGER_BONUS_SIZE+1)).toString());
+            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(MANAGER_BONUS_SIZE)).toString());
         }
         else if(employee instanceof Developer){
-            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(DEVELOPER_BONUS_SIZE+1)).toString());
+            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(DEVELOPER_BONUS_SIZE)).toString());
         }
         else
-            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(OTHER_BONUS_SIZE+1)).toString());
+            return Double.parseDouble(employee.getSalary().multiply(new BigDecimal(OTHER_BONUS_SIZE)).toString());
     }
 
     @Override
