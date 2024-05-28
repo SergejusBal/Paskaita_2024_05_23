@@ -18,7 +18,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class TestperformDuties {
 
     //Arrange
-   // List<Employee> employeeList;
     Developer developerJAVA;
     Developer developerC_CHARP;
     Developer developer_C_PLUS_PLUS;
@@ -40,11 +39,6 @@ public class TestperformDuties {
 
         System.setOut(new PrintStream(outputStreamCaptor));
 
-      //  employeeList.add(developerJAVA);
-     //   employeeList.add(developerC_CHARP);
-       // employeeList.add(developer_C_PLUS_PLUS);
-      //  employeeList.add(managerBigTeam);
-      //  employeeList.add(managerSmallTeam);
 
         employeeService = new EmployeeServiceImpl();
     }
